@@ -287,9 +287,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server / hexo s</span><br></pre></td></tr></table></figure>
 
 <p>hexo s表示将本机作为服务器，上述步骤不报错的情况下，结果如下图：</p>
-<p><img src="C:\Users\86153\AppData\Roaming\Typora\typora-user-images\image-20231128180814161.png" alt="image-20231128180814161"></p>
+<p><img src="/image-20231128180814161.png"></p>
 <p>浏览器中通过url访问博客即可。</p>
-<h2 id="更换博客模板："><a href="#更换博客模板：" class="headerlink" title="更换博客模板："></a>更换博客模板：</h2><p><img src="C:\Users\86153\AppData\Roaming\Typora\typora-user-images\image-20231128181836081.png"></p>
+<h2 id="更换博客模板："><a href="#更换博客模板：" class="headerlink" title="更换博客模板："></a>更换博客模板：</h2><p><img src="/image-20231128181836081.png"></p>
 <p>在hexo官网的theme板块有各种博客模板，点击模板作者名字进入其github主页，在README中一般会给出仓库下载地址，比如：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/meannoharm/hexo-theme-mnh themes/mnh</span><br></pre></td></tr></table></figure>
 
@@ -299,13 +299,13 @@
 
 <p>或者直接下载仓库zip压缩包再解压到theme文件夹下。</p>
 <p>最后修改自己博客文件夹下的_config.yml文件，修改下图位置，将模板名字修改为刚才克隆的模板文件夹名字，初始模板一般为landscape。</p>
-<p><img src="C:\Users\86153\AppData\Roaming\Typora\typora-user-images\image-20231128182750997.png" alt="image-20231128182750997"></p>
+<p><img src="/image-20231128182750997.png"></p>
 <p>接着依次执行如下命令，将本地修改进行更新：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>其中hexo g用于根据博客内容生成静态文件（css，html，js等），并存放到博客文件夹下的public目录里，开启本地服务器后便可看到更新后的博客。</p>
 <h2 id="将博客部署到github："><a href="#将博客部署到github：" class="headerlink" title="将博客部署到github："></a>将博客部署到github：</h2><p>首先在github上新建以**&lt;github用户名&gt;.github.io**格式命名的仓库，接着修改_config.yml文件中如下位置：</p>
-<p><img src="C:\Users\86153\AppData\Roaming\Typora\typora-user-images\image-20231128183555293.png" alt="image-20231128183555293"></p>
+<p><img src="/image-20231128183555293.png"></p>
 <p>接着安装hexo-deployer-git 自动部署发布工具：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
