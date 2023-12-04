@@ -8,17 +8,19 @@
   <meta name="renderer" content="webkit">
 
   
-  <title>go_learn | Hexo</title>
+  <title>go学习笔记 | Hexo</title>
 
   <link rel="shortcut icon" href="/images/favicon.png">
   <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="go_learn">
+  <meta name="description" content="显式完整声明变量，变量声明了就必须使用，否则编译报错： 123456var a int &#x3D; 3 &#x2F;&#x2F;类型可以省略，但关键字var不能省var a , b &#x3D; 3 , &quot;abc&quot;var (		  &#x2F;&#x2F;批量声明    a &#x3D; 3    b &#x3D; &quot;abc&quot;)  短类型声明： 12a :&#x3D; 3 &#x2F;&#x2F;可以省略var和类型a , b :&#x3D; 3 , 4    短变量声明后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="go学习笔记">
 <meta property="og:url" content="http://example.com/2023/11/30/go-learn/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="显式完整声明变量，变量声明了就必须使用，否则编译报错： 123456var a int &#x3D; 3 &#x2F;&#x2F;类型可以省略，但关键字var不能省var a , b &#x3D; 3 , &quot;abc&quot;var (		  &#x2F;&#x2F;批量声明    a &#x3D; 3    b &#x3D; &quot;abc&quot;)  短类型声明： 12a :&#x3D; 3 &#x2F;&#x2F;可以省略var和类型a , b :&#x3D; 3 , 4    短变量声明后">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-30T02:39:24.000Z">
-<meta property="article:modified_time" content="2023-11-30T02:39:24.845Z">
+<meta property="article:modified_time" content="2023-12-04T13:07:54.591Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -177,10 +179,10 @@
   <style>#main article .mdui-card-content .text-center{text-align:center!important}</style>
   <article class="mdui-card mdui-m-b-5">
     <header class="mdui-card-media">
-      <img src="/images/random/material-15.png" style="max-height: 240px;">
+      <img src="/images/random/material-7.png" style="max-height: 240px;">
       <div class="mdui-card-media-covered">
         <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title">go_learn</div>
+          <div class="mdui-card-primary-title">go学习笔记</div>
           <div class="mdui-card-primary-subtitle"><i class="iconfont">&#xe697;</i> 2023-11-30 / <i class="iconfont">&#xe601;</i> John Doe</div>
         </div>
       </div>
@@ -202,10 +204,10 @@
           <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="mdui-icon material-icons">share</i></button>
           <ul class="mdui-menu" id="share_menu">
             <li class="mdui-menu-item">
-              <a href="https://service.weibo.com/share/share.php?appkey=&title=go_learn&url=http://example.com/2023/11/30/go-learn/&pic=http://example.com/images/favicon.png&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+              <a href="https://service.weibo.com/share/share.php?appkey=&title=go学习笔记&url=http://example.com/2023/11/30/go-learn/&pic=http://example.com/images/favicon.png&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
             </li>
             <li class="mdui-menu-item">
-              <a href="https://twitter.com/intent/tweet?text=go_learn&url=http://example.com/2023/11/30/go-learn/&via=John Doe" target="_blank" class="mdui-ripple">Share to Twitter</a>
+              <a href="https://twitter.com/intent/tweet?text=go学习笔记&url=http://example.com/2023/11/30/go-learn/&via=John Doe" target="_blank" class="mdui-ripple">Share to Twitter</a>
             </li>
             <li class="mdui-menu-item">
               <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/11/30/go-learn/" target="_blank" class="mdui-ripple">Share to Facebook</a>
@@ -214,20 +216,46 @@
               <a href="https://plus.google.com/share?url=http://example.com/2023/11/30/go-learn/" target="_blank" class="mdui-ripple">Share to Google+</a>
             </li>
             <li class="mdui-menu-item">
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2023/11/30/go-learn/&title=go_learn" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2023/11/30/go-learn/&title=go学习笔记" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
             </li>
             <li class="mdui-menu-item">
-              <a href="https://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=go_learn&pics=http://example.com/images/favicon.png&url=http://example.com/2023/11/30/go-learn/" target="_blank" class="mdui-ripple">Share to QQ</a>
+              <a href="https://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=go学习笔记&pics=http://example.com/images/favicon.png&url=http://example.com/2023/11/30/go-learn/" target="_blank" class="mdui-ripple">Share to QQ</a>
             </li>
             <li class="mdui-menu-item">
-              <a href="https://telegram.me/share/url?url=http://example.com/2023/11/30/go-learn/&text=go_learn" target="_blank" class="mdui-ripple">Share to Telegram</a>
+              <a href="https://telegram.me/share/url?url=http://example.com/2023/11/30/go-learn/&text=go学习笔记" target="_blank" class="mdui-ripple">Share to Telegram</a>
             </li>
           </ul>
         
       </div>
     </header>
     <div class="mdui-card-content mdui-typo">
-      
+      <p>显式完整声明变量，变量声明了就必须使用，否则编译报错：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a <span class="type">int</span> = <span class="number">3</span> <span class="comment">//类型可以省略，但关键字var不能省</span></span><br><span class="line"><span class="keyword">var</span> a , b = <span class="number">3</span> , <span class="string">&quot;abc&quot;</span></span><br><span class="line"><span class="keyword">var</span> (		  <span class="comment">//批量声明</span></span><br><span class="line">    a = <span class="number">3</span></span><br><span class="line">    b = <span class="string">&quot;abc&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>短类型声明：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a := <span class="number">3</span> <span class="comment">//可以省略var和类型</span></span><br><span class="line">a , b := <span class="number">3</span> , <span class="number">4</span> </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>短变量声明后可以用&#x3D;赋值将其变成显式声明，但显式声明的不能再用:&#x3D;进行赋值</p>
+</blockquote>
+<p>浮点型，不加类型的话会被自动推断为float64</p>
+<p>复数类型有complex64(两个float32构成)和complex128</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a <span class="type">complex64</span> = <span class="number">3.1</span> + <span class="number">5i</span></span><br><span class="line"><span class="keyword">var</span> v = <span class="built_in">complex</span>(<span class="number">3.1</span>,<span class="number">5</span>)</span><br><span class="line">a := <span class="built_in">real</span>(v)  <span class="comment">//返回实部</span></span><br><span class="line">b := image(v) <span class="comment">//返回虚部 </span></span><br></pre></td></tr></table></figure>
+
+<p>字符串是常量，不能修改，且其末尾不包含NULL，不同于C</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a := <span class="string">&quot;abc&quot;</span></span><br><span class="line">b := []<span class="type">byte</span>(a) </span><br><span class="line">c := a[<span class="number">0</span>:<span class="number">2</span>] <span class="comment">//字符串的切片与原字符串指向相同的底层字符数组，返回string而不是slice</span></span><br><span class="line">d := a + b</span><br></pre></td></tr></table></figure>
+
+<p>指针类型，go中没有-&gt;操作符，结构体指针只能用.访问成员变量</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a := <span class="number">4</span></span><br><span class="line"><span class="keyword">var</span> b *<span class="type">int</span> = &amp;a</span><br><span class="line">b++ <span class="comment">//不允许指针运算</span></span><br></pre></td></tr></table></figure>
+
+<p>数组类型，数组长度固定，不可追加元素，值拷贝</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a := [<span class="number">3</span>]<span class="type">int</span>&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;</span><br><span class="line">a := [...]<span class="type">int</span>&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125; <span class="comment">//自动推断长度</span></span><br><span class="line">a := [...]<span class="type">int</span>&#123;<span class="number">1</span>:<span class="number">1</span>,<span class="number">3</span>:<span class="number">3</span>&#125; <span class="comment">//通过下标初始化，长度为最大下标，其余默认是0</span></span><br><span class="line"><span class="keyword">for</span> i,v := <span class="keyword">range</span> a&#123;</span><br><span class="line">    <span class="comment">//遍历下标和元素</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>变长数组：切片slice，底层结构除了数组的指针和长度外，还加了个容量属性</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a := [...]<span class="type">int</span>&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;</span><br><span class="line">b := a[:<span class="number">1</span>] <span class="comment">//通过数组创建切片</span></span><br><span class="line">c := <span class="built_in">make</span>([]<span class="type">int</span>,<span class="number">10</span>,<span class="number">15</span>) <span class="comment">//通过make创建，10是长度，15是容量</span></span><br><span class="line"><span class="built_in">len</span>(c)</span><br><span class="line"><span class="built_in">cap</span>(c)</span><br><span class="line">c := <span class="built_in">append</span>(c,<span class="number">1</span>)</span><br><span class="line">d := <span class="built_in">make</span>([]<span class="type">int</span>,<span class="number">2</span>) <span class="comment">//长度容量都是2</span></span><br><span class="line"><span class="built_in">copy</span>(d,c)</span><br></pre></td></tr></table></figure>
+
+<p>map类型,map默认长度及数值？map不是并发安全的，sync包中的map是并发安全的，</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a := <span class="keyword">map</span>[<span class="type">rune</span>]<span class="type">int</span>&#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">1</span>,<span class="string">&#x27;b&#x27;</span>:<span class="number">2</span>&#125;</span><br><span class="line">b := <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="type">int</span>]<span class="type">string</span>,<span class="number">10</span>)</span><br><span class="line"><span class="keyword">for</span> k,v := <span class="keyword">range</span> a&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">delete</span>(b,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
       
       <blockquote>
         
